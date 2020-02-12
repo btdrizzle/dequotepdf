@@ -9,7 +9,7 @@ module.exports = {
         partDescription: "Teflon Screw-in Retainer",
         partPrice: 25,
         inStock: true,
-        partPath: "./partPics/403103.png",
+        partPath: "403103.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -19,7 +19,7 @@ module.exports = {
         partDescription: "Preamplifier with pulse PA1001A-1",
         partPrice: 500,
         inStock: true,
-        partPath: "./partPics/PA1001A-1.png",
+        partPath: "PA1001A-1.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -29,7 +29,7 @@ module.exports = {
         partDescription: "FH710 Sens TLM 73 96 574",
         partPrice: 450,
         inStock: true,
-        partPath: "./partPics/500094.png",
+        partPath: "500094.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -39,7 +39,7 @@ module.exports = {
         partDescription: "FH710 CO 73 97 938",
         partPrice: 450,
         inStock: true,
-        partPath: "./partPics/500091.png",
+        partPath: "500091.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -49,7 +49,7 @@ module.exports = {
         partDescription: "FH710 Std 73 99 252",
         partPrice: 450,
         inStock: true,
-        partPath: "./partPics/500090.png",
+        partPath: "500090.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -59,7 +59,7 @@ module.exports = {
         partDescription: "FH710 Standard + Int-B01",
         partPrice: 570,
         inStock: true,
-        partPath: "./partPics/500090.png",
+        partPath: "500090.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -69,7 +69,7 @@ module.exports = {
         partDescription: "PC45.25",
         partPrice: 550,
         inStock: true,
-        partPath: "./partPics/500886.png",
+        partPath: "500886.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -79,7 +79,7 @@ module.exports = {
         partDescription: "2in TZN50 TC",
         partPrice: 2680,
         inStock: true,
-        partPath: "./partPics/L00003.png",
+        partPath: "L00003.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -89,7 +89,7 @@ module.exports = {
         partDescription: "3in TZN80 TC",
         partPrice: 2890,
         inStock: true,
-        partPath: "./partPics/L00012.png",
+        partPath: "L00012.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       },
@@ -99,7 +99,7 @@ module.exports = {
         partDescription: "6in TZN150 Graphite",
         partPrice: 3300,
         inStock: true,
-        partPath: "./partPics/L00006.png",
+        partPath: "L00006.png",
         createdAt: Sequelize.literal("NOW()"),
         updatedAt: Sequelize.literal("NOW()")
       }], {});
