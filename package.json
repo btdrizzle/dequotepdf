@@ -3,14 +3,29 @@
   "version": "1.0.0",
   "description": "pdf quote",
   "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
+    "client": "cd client && yarn run start",
+    "lint": "eslint \"**/*.js\" --quiet",
+    "install": "cd client && yarn install",
+    "build": "cd client && yarn run build",
+    "heroku-postbuild": "yarn run build"
+  },
   "repository": "https://github.com/btdrizzle/dequotepdf.git",
   "author": "drake and cavazos",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "morgan": "^1.9.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.2",
     "path": "^0.12.7",
-    "sequelize": "^5.21.4"
+    "sequelize": "^5.21.4",
+    "sequelize-cli": "^5.5.1"
   }
 }
