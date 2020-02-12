@@ -1,0 +1,16 @@
+{
+  "name": "dequotepdf",
+  "version": "1.0.0",
+  "description": "pdf quote",
+  "main": "server.js",
+  "repository": "https://github.com/btdrizzle/dequotepdf.git",
+  "author": "drake and cavazos",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.4"
+  }
+}
