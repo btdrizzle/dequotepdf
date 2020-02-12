@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const logger = require("morgan");
 const db = require("./models");
 const path = require("path");
 
