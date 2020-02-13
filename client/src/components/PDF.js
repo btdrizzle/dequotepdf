@@ -32,7 +32,7 @@ function PDF(props) {
         const dd = {
             pageSize: "letter",
             pageOrientation: "portrait",
-            pageMargins: [10, 10, 10, 10],
+            pageMargins: [20, 20, 20, 20],
             content: [
 
 
@@ -43,33 +43,34 @@ function PDF(props) {
 
                 {
                     text: 'Customer Name:',
-                    style: 'subheader'
+                    style: 'body'
                 },
                 {
                     text: 'Email Address:',
-                    style: 'subheader'
+                    style: 'body'
                 },
                 {
                     text: 'Phone Number:',
-                    style: 'subheader'
+                    style: 'body'
                 },
                 {
                     text: 'Quote Number:',
-                    style: 'subheader'
+                    style: 'body'
                 },
                 {
                     text: 'Date:',
-                    style: 'subheader'
+                    style: 'body'
                 },
                 {
                     text: 'Dear ‘Customer Name’, (*NOTE: This quote should be sent to Customers Email Address)',
-                    style: 'subheader'
+                    style: 'bodyMargin'
                 },
                 {
                     text: 'Thank you for visiting our webstore. Please use this quote to place your order by emailing the completed form to  Sales@faureherman.com. Payment may be made by credit card (CC), Purchase Order (PO), or bank transfer.',
-                    style: 'subheader'
+                    style: 'bodyMargin'
                 },
                 {
+                    style: 'tableExample',
                     table: {
                         headerRows: 1,
                         widths: ['*', '*', '*', '*', '*', '*'],
@@ -96,6 +97,7 @@ function PDF(props) {
                             ['Billing Address', { colSpan: 2, text: '' }, ''],
                             ['Delivery Address', { colSpan: 2, text: '' }, ''],
                             ['Contact Name & Phone # for Delivery', { colSpan: 2, text: '' }, ''],
+
                         ]
                     }
                 },
@@ -118,7 +120,6 @@ function PDF(props) {
                     table: {
                         widths: ['auto', 'auto', 'auto'],
                         headerRows: 2,
-                        // keepWithHeaderRows: 1,
                         body: [
                             [{ text: 'FOR US CUSTOMERS ONLY', style: 'tableHeader', colSpan: 3, alignment: 'center' }, {}, {}],
                             [{ text: 'If you are a first-time buyer OR if your last purchase was more than 2 years ago, you will need to provide your W9, resale certificate and tax exemption (if applicable) before order can be processed.', style: 'tableHeader', colSpan: 3, alignment: 'left' }, {}, {}],
@@ -127,19 +128,19 @@ function PDF(props) {
                 },
                 {
                     text: 'Once your information has been processed, you will receive an Order Acknowledgement with the specifics of your order confirming lead time & total amount of order, including shipping.',
-                    style: 'subheader'
+                    style: 'bodyMargin'
                 },
                 {
                     text: 'Thank you for your order, we appreciate your business.',
-                    style: 'subheader'
+                    style: 'bodyMargin'
                 },
                 {
                     text: 'Faure Herman',
-                    style: 'subheader'
+                    style: 'bodyMargin'
                 },
                 {
                     text: 'FAURE HERMAN RESPECTS GLOBAL TRADE POLICIES; PRODUCTS WILL NOT BE DELIVERED TO SANCTIONED COUNTRIES',
-                    style: 'header'
+                    style: 'marginTB'
                 },
                 {
                     text: 'GENERAL TERMS OF SALE \n',
@@ -251,6 +252,70 @@ function PDF(props) {
                     text: '6.5. If the Purchaser or his representative considers that the goods supplied do not comply with the contract specifications, he shall advise the FAURE HERMAN Company by means of a recorded delivery letter with acknowledgement of receipt, which shall be sent within four (4) calendar days at the latest from their reception.',
                     style: 'small'
                 },
+                {
+                    text: '7. DELIVERY TIME',
+                    style: 'subheader'
+                },
+                {
+                    text: '7.1. Unless expressed otherwise m the FAURE HERMAN Purchase Order acceptance, the delivery time is calculated from the latest of the following dates:',
+                    style: 'small'
+                },
+                {
+                    text: 'a) Reception by the FAURE HERMAN Company of the information necessary for the execution of the Purchase Order;',
+                    style: 'small'
+                },
+                {
+                    text: 'b) Reception of the instalment of the Purchase order',
+                    style: 'small'
+                },
+                {
+                    text: '7.2. This delivery time does not take into account the annual holidays and the possible delays resulting from the inspection of goods by the Purchaser.',
+                    style: 'small'
+                },
+                {
+                    text: '7.3. If no delivery time is determined in the Contract, the FAURE HERMAN Company shall deliver according to its reduction capacities.',
+                    style: 'small'
+                },
+                {
+                    text: '8. DELIVERY DELAYS',
+                    style: 'subheader'
+                },
+                {
+                    text: '8.1 The delivery times are respected as best as possible. Delays cannot justify either the Purchase Order cancellation, or the stoppage of payments which are due.',
+                    style: 'small'
+                },
+                {
+                    text: '8.2 Subject to provisions of the below Article 14. in case of delivery delays towards the contractual delivery time, a penalty provision shall be applied, provided that this provision is part of the General Terms of Purchase and provided that it is has been accepted by the FAURE HERMAN Company. It shall apply on the value of a or the goods whose delivery was delayed. It shall specify that the penalty cannot be greater than 5% of the value of the same good. A penalty can only be applied, provided that the reason can be solely attributable to the FAURE HERMAN Company and if it caused a real prejudice stated, after due hearing of the days from the scheduled delivery date, his intention to apply the penalty.',
+                    style: 'small'
+                },
+                {
+                    text: '9. BELATED COLLECTION',
+                    style: 'subheader'
+                },
+                {
+                    text: '9.1. If, for any reason, beyond the FAURE HERMAN Company"s control, the Purchaser does not collect the goods on the date scheduled in the contract, he is nevertheless forced to respect the contractual payments settlements dates, as if these goods were effectively collected. In this event, goods will be stored by the FAURE HERMAN Company in a place of its own choosing, at the Purchaser"s own expenses and risks.',
+                    style: 'small'
+                },
+                {
+                    text: 'The FAURE HERMAN Company declines any subsequent responsibility in this respect.',
+                    style: 'small'
+                },
+                {
+                    text: '9.2. If, three (3) months after the delivery date scheduled in the contract, and eight (8) calendar days after the forwarding date of a formal notice by means of a recorded delivery letter and remained without any answer, the Purchaser did not collect the goods, the FAURE HERMAN Company shall reserve the right, without being forced to ask for termination before the Court, to back out of the Contract in relation to the aforesaid goods. Any sums due by the Purchaser of the goods, which are already delivered, will become immediately due for payment; besides the FAURE HERMAN Company shall have grounds to claim for compensations for the prejudice it has suffered.',
+                    style: 'small'
+                },
+                {
+                    text: '10. PRICE',
+                    style: 'subheader'
+                },
+                {
+                    text: '10.1 Unless expressed otherwise, prices in the bids, quotations or FAURE HERMAN Purchase Order acceptance are defined for the goods and quantities determined at the time of the Purchase Order acceptance, duty-free for "Ex-works" goods, and do not include installation and commissioning costs.',
+                    style: 'small'
+                },
+                {
+                    text: '10.2 The prices we invoice are those in force at the time of delivery. Prices are revisable without any notice and at the FAURE HERMAN Company"s request until the delivery date scheduled in the Contract.',
+                    style: 'small'
+                },
 
             ],
             styles: {
@@ -260,13 +325,28 @@ function PDF(props) {
                 },
                 subheader: {
                     fontSize: 8,
-                    margin: [0, 10, 0, 5]
+                    margin: [0, 5, 0, 0]
                 },
                 quote: {
                     italics: true
                 },
                 small: {
                     fontSize: 6
+                },
+
+                body: {
+                    fontSize: 12
+                },
+                bodyMargin: {
+                    fontSize: 12,
+                    margin: [0, 20, 0, 0]
+                },
+                marginTB: {
+                    fontSize: 12,
+                    margin: [0, 20, 0, 20]
+                },
+                tableExample: {
+                    margin: [0, 20, 0, 0]
                 },
 
             }
