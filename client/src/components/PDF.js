@@ -97,7 +97,6 @@ function PDF(props) {
                             ['Billing Address', { colSpan: 2, text: '' }, ''],
                             ['Delivery Address', { colSpan: 2, text: '' }, ''],
                             ['Contact Name & Phone # for Delivery', { colSpan: 2, text: '' }, ''],
-
                         ]
                     }
                 },
@@ -316,7 +315,143 @@ function PDF(props) {
                     text: '10.2 The prices we invoice are those in force at the time of delivery. Prices are revisable without any notice and at the FAURE HERMAN Company"s request until the delivery date scheduled in the Contract.',
                     style: 'small'
                 },
-
+                {
+                    text: '11. CHARGES: PAYMENTS - EXEMPTION',
+                    style: 'subheader'
+                },
+                {
+                    text: '11.1. Charges in force at the time of the invoicing are invoiced and must be paid entirely at the delivery.',
+                    style: 'small'
+                },
+                {
+                    text: '11.2. In order to benefit from the system of sales in suspension of charges at the time of invoicing, the Purchaser shall supply to the FAURE HERMAN Company, when placing an order, the supporting export documents in force. Any belated forwarding of these documents cannot hinder the payment of our invoices at the contractual settlement date, together as the included charges, the reimbursement of exempted charges and the accounting regularisation can be performed only after receiving these documents.',
+                    style: 'small'
+                },
+                {
+                    text: '12. TERMS OF PAYMENTS',
+                    style: 'subheader'
+                },
+                {
+                    text: '12.1. Terms of Payment are those stipulated at the purchaser order acceptance. - Minimum amount of invoicing: 120 euro (one hundred and twenty euro).',
+                    style: 'small'
+                },
+                {
+                    text: '12.2. Unless provided otherwise in the FAURE HERMAN acknowledgement of receipt, payments will be effected net without instalment, by cheque or by draft 30 days after the collection or the invoicing entry.',
+                    style: 'small'
+                },
+                {
+                    text: '12.3. However, the Purchase Order instalment shall be immediately paid by cheque. When a cash retention of guarantee shall be requested, it shall be limited to 5 % total amount of the Purchase Order, it shall be payable on delivery of the equipment against receipt of a bank guarantee of identical value, releasable at the expiration of the contractual guarantee deadline.',
+                    style: 'small'
+                },
+                {
+                    text: '12.4. In the event of payment delay of the Purchase Order, the FAURE HERMAN Company reserves the right, either to stop any work of his own obligations, up to complete payment of the major due sums-a payment increased by a delay interest equal to the discount rate of the European Central Bank, increased by 7 points of percentage: in this event, the delivery time shall be extended proportionally to the payment delay; or to terminate the contract 8 calendar days after the forwarding date of a formal notice by means of a recorded delivery letter and remained without any answer, and to obtain compensation for the suffered prejudice.',
+                    style: 'small'
+                },
+                {
+                    text: '13. GUARANTEE - LIABILITY',
+                    style: 'subheader'
+                },
+                {
+                    text: '13.1. PASSING OF TITLE CLAUSE DUBAUCHET LAW DATED MAY 12 Th. 1980 Passing of title for the equipment mentioned in the purchase order is conditional upon the complete payment for the said goods, should any of the agreed settlements not be paid, even partially, besides the fact that provisions specified in article 12.4 of the FAURE HERMAN general terms of trade will be applicable, the equipment will remain the property of FAURE HERMAN, up to full payment, according to the outstanding sums.',
+                    style: 'small'
+                },
+                {
+                    text: '13.2. On receipt, the Purchaser has to carry out a thorough examination of the product. To be covered by the present guarantee, the defect of the good, detectable thanks to a thorough examination, shall be reported to the FAURE HERMAN Company, within 4 calendar days from receipt of the goods. Any further appearance of a hidden defect shall be reported at once to the FAURE HERMAN Company.',
+                    style: 'small'
+                },
+                {
+                    text: '13.3. The FAURE HERMAN Company guarantees to the Purchaser to goods sold against any designing, manufacturing defect or defect in the raw material appearing within twelve (12) months (6 months for counters), from the commissioning date and at the latest eighteen (18) months after the availability of the equipment. Performances of the goods are guaranteed only within the limits of the performances stipulated expressly at the Purchase Order acceptance.',
+                    style: 'small'
+                },
+                {
+                    text: '13.4. The guarantee involved may not extend the guarantee deadline.',
+                    style: 'small'
+                },
+                {
+                    text: '13.5. For the goods re-sold in state and the components purchased by the FAURE HERMAN Company to its suppliers, the FAURE HERMAN guarantee is strictly limited to the one agreed by its suppliers.',
+                    style: 'small'
+                },
+                {
+                    text: '13.6. The guarantees defined as above cover exclusively, and according to the FAURE HERMAN Company"s preference, the standard replacement or repair by the FAURE HERMAN Company within its workshops of goods or spare parts, which are regarded by the FAURE HERMAN Company, as being defective, after the Purchaser returned the aforesaid goods or spare parts, except the haulage, packing, assembly, disassembly costs any subsidiaries, chargeable to the Purchaser. Should a technician"s intervention from the FAURE HERMAN Company on site be requested by the customer, during the guarantee period, for a reason such as:',
+                    style: 'small'
+                },
+                {
+                    text: 'localisation of the defect, repairing of equipment, performance control, etc. the expenses corresponding to the travel and stay of our labour force, should be invoiced in order, according to the rate in force at the moment of the intervention. The costs corresponding to the labour time on site and to the spare parts supplied would be borne by us, in the event of the FAURE HERMAN Company"s commitment.',
+                    style: 'small'
+                },
+                {
+                    text: '13.7. FAURE HERMAN shall not be liable for any defect arising from ordinary wear and tear, misuse by or negligence of the purchaser or any third party. Any transport, storage, installation, use of the goods not in compliance with the state-of-the-art and with the technical specifications submitted by the FAURE HERMAN Company to the Purchaser, any repair work by the Purchaser or by a third without any prior authorisation from the FAURE HERMAN Company involves the loss of the benefit from the guarantee.',
+                    style: 'small'
+                },
+                {
+                    text: 'Apart from the origin of the sold goods, FAURE HERMAN shall not be liable for any damages and direct or indirect losses (operating loss …). In any case and whatever the proved liability of FAURE HERMAN, it will be limited to the guarantees allowed by our insurance company.',
+                    style: 'small'
+                },
+                {
+                    text: '13.8. The present guarantee does not cover either the defects - resulting from the material supplied by the Purchaser or from a design imposed by the latter-or repair works resulting from normal wear of the goods or a fortuitous event, an occurrence beyond control, or the materials or consumable goods.',
+                    style: 'small'
+                },
+                {
+                    text: '13.9. For non-professional Purchasers or customers, provisions of Article 13 above do not exclude the legal guarantee of latent defect, which is due to them, whatever the case.',
+                    style: 'small'
+                },
+                {
+                    text: '14. FORCE MAJEURE - EXEMPTION REASONS',
+                    style: 'subheader'
+                },
+                {
+                    text: '14.1. In the event of Force Majeure occurrence or occurrences beyond the control of the parties affected (fire, flood, labour dispute, strikes either by the FAURE HERMAN Company, or by the suppliers, mobilisation, requisition embargo, lack of means of transportation, lack of procurement, etc.) hindering or involving unreasonably high costs for executing the obligations deriving from the Contract, the execution deadlines of these obligations well be extended by the time of the aforesaid events and shall be executed spontaneously as soon as they stop. So as the benefit from this extension, the party wishing to put forward the occurrences mentioned above has to advise at once, in writing, the other part of their intervention as well as their stoppage.',
+                    style: 'small'
+                },
+                {
+                    text: '14.2. If, owing to these occurrences, the Contract execution becomes impossible in a reasonable deadline, each party has the right to back out of the Contract, by means of a simple written notification, without being forced to demand the Contract termination before the Court.',
+                    style: 'small'
+                },
+                {
+                    text: '15. OUTSTANDING DEBTS',
+                    style: 'subheader'
+                },
+                {
+                    text: 'The Contract termination for whatever reason does not affect the existing outstanding debts between the parties.',
+                    style: 'small'
+                },
+                {
+                    text: '16. ARBITRATION',
+                    style: 'subheader'
+                },
+                {
+                    text: 'All disputes, arising from or in connection with the Contract, or being the result or the consequences shall be exclusively settled by the Commercial Court of Mamers (France), even if in case of guarantee or multiplicity of holders. The laws of France govern this agreement.',
+                    style: 'small'
+                },
+                {
+                    text: `Orders Processed by Faure Herman Meter Inc.`, fontSize: 14, alignment: 'center',
+                    style: 'marginTB'
+                },
+                { text: "    ", alignment: 'center' },
+                {
+                    text: 'Faure Herman Meter Inc. (FHMI) Terms & Conditions (T&Cs) \n',
+                    style: 'header'
+                },
+                {
+                    text: 'This is an agreement for the sale of goods between Faure Herman Meter Inc. (“Seller”) and Buyer. In consideration of the mutual promises set forth in this agreement, the parties agree to the terms and conditions as set forth below:',
+                    style: 'small'
+                },
+                {
+                    text: '1. ACCEPTANCE \n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Unless otherwise expressly provided herein, it is agreed that the sale of the products as detailed in our quotation are expressly made on the Terms and Conditions contained herein and , to the extent of any conflict shall take precedence over any terms and conditions which may appear on Buyer ’s purchase order unless expressly accepted by Seller in writing. Buyer’s acceptance of and/or payment for the product covered herein shall constitute and acceptance of these Terms and Conditions.',
+                    style: 'small'
+                },
+                {
+                    text: '2. PAYMENT TERMS. \n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'All invoices are due and payable thirty (30) days from the date of invoice in U.S. currency except for export shipments for which Seller may require other arrangements, in the manner set forth in our quotation or at the time of order. In the event of any amount of payable to seller being overdue, seller may, without prejudice to any other rights, suspend delivery to buyer or terminate the contract and/or charge the buyer interest at the maximum rate authorized by law from the date on which it is due until it is paid. No payment due to the seller shall in any circumstance be offset against any sum owed by seller to buyer. Seller shall be entitled to ship any order C.O.D. or to cancel any order then outstanding and shall receive reimbursement for reasonable cancellation charges. Buyer shall be liable for all expenses attendant to collection of past due amounts, including attorneys’ fees and/or collection agency fees.',
+                    style: 'small'
+                },
             ],
             styles: {
                 header: {
