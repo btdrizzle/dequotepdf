@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.exports {
+  margin: auto !important;
+  background-color: #22303a !important;
+  color: #ffffff !important;
+  width: 150px !important;
+  text-transform: uppercase;
+  margin: 0 auto !important;
+  display: block!important;
+}
+
+.margin-tb-10px {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}

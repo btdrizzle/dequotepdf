@@ -7,19 +7,19 @@ const moment = require("moment");
 
 function PDF(props) {
     function makeThatPDF() {
-        
+
         function objectsToArrays(objectArray) {
-            let newArray= [];
+            let newArray = [];
             objectArray.forEach(valueSet => {
                 newArray.push(Object.values(valueSet))
-            
+
             })
-            
+
             console.log(newArray)
             return newArray;
         }
-        
-        
+
+
         const currentTime = new moment().format("MMM Do YYYY h:mm a")
         pdfMake.fonts = {
             Roboto: {
@@ -28,18 +28,21 @@ function PDF(props) {
                 italics: 'Roboto-Italic.ttf',
                 bolditalics: 'Roboto-MediumItalic.ttf'
             }
-          };
+        };
         const dd = {
-            pageSize: "A4",
+            pageSize: "A5",
             pageOrientation: "portrait",
-            pageMargins: [10,10,10,10],
+            pageMargins: [10, 10, 10, 10],
             content: [
-                {text:`Sales Quote Generated ${currentTime}`, fontSize: 16, alignment: 'center'},
-                {text: "    ", alignment: 'center'},
+
+                {
+                    text: `Sales Quote Generated ${currentTime}`, fontSize: 16, alignment: 'center'
+                },
+                { text: "    ", alignment: 'center' },
                 {
                     table: {
                         headerRows: 1,
-                        widths: ['*','*','*','*','*','*'],
+                        widths: ['*', '*', '*', '*', '*', '*'],
                         body: [
                             [...props.pdfHeaders],
                             ...objectsToArrays(props.pdfValues)
