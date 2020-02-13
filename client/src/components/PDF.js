@@ -30,15 +30,45 @@ function PDF(props) {
             }
         };
         const dd = {
-            pageSize: "A5",
+            pageSize: "letter",
             pageOrientation: "portrait",
             pageMargins: [10, 10, 10, 10],
             content: [
 
+
                 {
-                    text: `Sales Quote Generated ${currentTime}`, fontSize: 16, alignment: 'center'
+                    text: `Sales Quote Generated ${currentTime}`, fontSize: 14, alignment: 'center'
                 },
                 { text: "    ", alignment: 'center' },
+
+                {
+                    text: 'Customer Name:',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Email Address:',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Phone Number:',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Quote Number:',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Date:',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Dear ‘Customer Name’, (*NOTE: This quote should be sent to Customers Email Address)',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Thank you for visiting our webstore. Please use this quote to place your order by emailing the completed form to  Sales@faureherman.com. Payment may be made by credit card (CC), Purchase Order (PO), or bank transfer.',
+                    style: 'subheader'
+                },
                 {
                     table: {
                         headerRows: 1,
@@ -49,7 +79,68 @@ function PDF(props) {
                         ]
                     }
                 },
-
+                {
+                    text: 'DAP Shipping not included; will be added to order once confirmed.',
+                    style: 'subheader'
+                },
+                {
+                    style: 'tableExample',
+                    color: '#444',
+                    table: {
+                        widths: ['auto', 'auto', 'auto'],
+                        headerRows: 2,
+                        // keepWithHeaderRows: 1,
+                        body: [
+                            [{ text: 'Payment Methods: PO or Credit card may be entered on form. If bank transfer is preferred, please indicate that and we will contact you for those details by phone.', style: 'tableHeader', colSpan: 3, alignment: 'left' }, {}, {}],
+                            [{ text: 'ACH / EFT', style: 'tableHeader', alignment: 'left' }, { text: 'PO', style: 'tableHeader', alignment: 'left' }, { text: 'Credit Card', style: 'tableHeader', alignment: 'left' }],
+                            ['Billing Address', { colSpan: 2, text: '' }, ''],
+                            ['Delivery Address', { colSpan: 2, text: '' }, ''],
+                            ['Contact Name & Phone # for Delivery', { colSpan: 2, text: '' }, ''],
+                        ]
+                    }
+                },
+                {
+                    style: 'tableExample',
+                    color: '#444',
+                    table: {
+                        widths: ['auto', 'auto', 'auto'],
+                        headerRows: 2,
+                        // keepWithHeaderRows: 1,
+                        body: [
+                            [{ text: 'Shipping Options', style: 'tableHeader', colSpan: 3, alignment: 'center' }, {}, {}],
+                            [{ text: 'If you have a UPS, FEDEX or any courier service account you would like to use, please indicate here. *Note: A handling fee will be assessed based on the delivery destination. All shipping will be added to the order when acknowledged. Spare parts orders must be paid in full prior to delivery.', style: 'tableHeader', colSpan: 3, alignment: 'left' }, {}, {}],
+                        ]
+                    }
+                },
+                {
+                    style: 'tableExample',
+                    color: '#444',
+                    table: {
+                        widths: ['auto', 'auto', 'auto'],
+                        headerRows: 2,
+                        // keepWithHeaderRows: 1,
+                        body: [
+                            [{ text: 'FOR US CUSTOMERS ONLY', style: 'tableHeader', colSpan: 3, alignment: 'center' }, {}, {}],
+                            [{ text: 'If you are a first-time buyer OR if your last purchase was more than 2 years ago, you will need to provide your W9, resale certificate and tax exemption (if applicable) before order can be processed.', style: 'tableHeader', colSpan: 3, alignment: 'left' }, {}, {}],
+                        ]
+                    }
+                },
+                {
+                    text: 'Once your information has been processed, you will receive an Order Acknowledgement with the specifics of your order confirming lead time & total amount of order, including shipping.',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Thank you for your order, we appreciate your business.',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Faure Herman',
+                    style: 'subheader'
+                },
+                {
+                    text: 'FAURE HERMAN RESPECTS GLOBAL TRADE POLICIES; PRODUCTS WILL NOT BE DELIVERED TO SANCTIONED COUNTRIES',
+                    style: 'header'
+                },
                 {
                     text: 'GENERAL TERMS OF SALE \n',
                     style: 'header'
@@ -103,14 +194,15 @@ function PDF(props) {
                 },
                 subheader: {
                     fontSize: 8,
-                    bold: true
+                    margin: [0, 10, 0, 5]
                 },
                 quote: {
                     italics: true
                 },
                 small: {
                     fontSize: 6
-                }
+                },
+
             }
         };
         pdfMake.createPdf(dd).open();
