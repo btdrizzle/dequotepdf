@@ -43,7 +43,7 @@ class App extends Component {
         <img className="logo" src="../faure-herman-logo.jpg" alt="Faure Herman logo"></img>
         <h1 className="text-center">Spare Parts Quotation</h1>
         <PDF className="mx-auto"
-          pdfHeaders={["Part Number", "Part Type", "Part Description", "Part Cost", "Quantity Ordered", "Total Price"]}
+          pdfHeaders={["Part Number", "Part Type", "Part Description", "Part Cost", "Quantity to Quote", "Total Price"]}
           pdfValues={sendData}
         />
 
@@ -56,7 +56,7 @@ class App extends Component {
             <th>Description</th>
             <th>Unit Cost</th>
             <th>In Stock</th>
-            <th>Quantity to Order</th>
+            <th>Quantity to Quote</th>
             <th>Add to Cart</th>
             <tr></tr>
           </thead>
