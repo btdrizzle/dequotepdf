@@ -79,7 +79,8 @@ function PDF(props) {
                         widths: ['*', '*', '*', '*', '*', '*'],
                         body: [
                             [...props.pdfHeaders],
-                            ...objectsToArrays(props.pdfValues)
+                            ...objectsToArrays(props.pdfValues),
+                            [{colSpan: 6, text: `Total Cost: ${props.total}`, alignment: 'right'}]
                         ]
                     }
                 },

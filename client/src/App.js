@@ -1,51 +1,40 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
+import { CartProvider } from "./components/ContextCartContext";
 import API from "./components/API";
-import PDF from "./components/PDF";
-import Table from 'react-bootstrap/Table';
+import Part from "./components/Part";
+import { Cart } from "./components/Cart";
+import { Table } from 'react-bootstrap';
 import "./App.css";
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fromDatabase: [],
-      toPDF: []
-    }
-  }
-  handleChange = async event => {
-    const { name, value } = event.target;
-    await this.setState({
-      [name]: value
-    });
-  }
-  async componentDidMount() {
-    await API.getParts()
-      .then(data => {
-        this.setState({ fromDatabase: data.data });
-        console.log(this.state.fromDatabase)
+
+export default function App()  {
+
+  const [fromDatabase,setfromDatabase] = useState([])
+  const [modalShow, setModalShow] = useState(false);
+  
+  function getAPI() {
+    API.getParts()
+    .then(data => {
+      setfromDatabase(data.data);
       })
   }
 
-
-  render() {
-
-    const dataCopy = this.state.fromDatabase;
-    let sendData = dataCopy.map(data => ({
-      partNumber: data.partNumber, partType: data.partType, partDescription: data.partDescription, partPrice: data.partPrice,
-      quantityOrdered: 0, totalPrice: 0
-    }))
-
-
+  useEffect(() => {
+    getAPI();
+  }, [])
 
     return (
+      <CartProvider>
       <div>
         <img className="logo" src="../faure-herman-logo.jpg" alt="Faure Herman logo"></img>
         <h1 className="text-center">Spare Parts Quotation</h1>
-        <PDF className="mx-auto"
-          pdfHeaders={["Part Number", "Part Type", "Part Description", "Part Cost", "Quantity to Quote", "Total Price"]}
-          pdfValues={sendData}
-        />
+
+
+
+        <button className="btn exports mx-auto" onClick={() => setModalShow(true)}>Show Cart</button>
+        <br/>
+        <Cart show={modalShow} onHide={() => setModalShow(false)} />
 
         <Table responsive bordered hover>
           <thead className="table-header">
@@ -61,23 +50,16 @@ class App extends Component {
             <tr></tr>
           </thead>
           <tbody>
-            {this.state.fromDatabase.map(data => (
-              <tr>
-                <td><img src={data.partPath} alt="part path" width="200" height="auto"></img></td>
-                <td>{data.partNumber}</td>
-                <td>{data.partType}</td>
-                <td>{data.partDescription}</td>
-                <td>{data.partPrice}</td>
-                <td>{data.inStock === true ? "Yes" : "No"}</td>
-              </tr>
+            {fromDatabase.map(data => (
+              <Part key={data.id} data={data}/>
             ))}
           </tbody>
 
         </Table>
 
       </div>
+      </CartProvider>
     )
-  }
+  
 }
 
-export default App;
