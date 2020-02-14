@@ -452,6 +452,134 @@ function PDF(props) {
                     text: 'All invoices are due and payable thirty (30) days from the date of invoice in U.S. currency except for export shipments for which Seller may require other arrangements, in the manner set forth in our quotation or at the time of order. In the event of any amount of payable to seller being overdue, seller may, without prejudice to any other rights, suspend delivery to buyer or terminate the contract and/or charge the buyer interest at the maximum rate authorized by law from the date on which it is due until it is paid. No payment due to the seller shall in any circumstance be offset against any sum owed by seller to buyer. Seller shall be entitled to ship any order C.O.D. or to cancel any order then outstanding and shall receive reimbursement for reasonable cancellation charges. Buyer shall be liable for all expenses attendant to collection of past due amounts, including attorneys’ fees and/or collection agency fees.',
                     style: 'small'
                 },
+                {
+                    text: '3. CANCELLATION AND SUSPENSION BY BUYER. \n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Should Buyer cancel or suspend any or all of the products covered by the terms and conditions of the Purchase Order, Buyer is subject to the following cancellation fees(% of Purchase Order Value) based on # of weeks FHMI has received the Purchase Order.Less than 2 week: 10 %; 2-4 weeks: 25 %; 4-8 weeks: 60 %; 9-11 weeks: 90 %; after 11 weeks: 100%.',
+                    style: 'small'
+                },
+                {
+                    text: '4. TAXES. \n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'All prices are exclusive of any sales, use, occupation or other tax applicable to the products covered by this order or the manufacture or sale thereof. Such taxes, when applicable, shall be added to the invoice and shall be paid by buyer unless buyer provides seller with a tax exemption certificate acceptable to the appropriate taxing authorities.',
+                    style: 'small'
+                },
+                {
+                    text: '5. F.C.A. POINT AND DELIVERY.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Unless different terms are specified in our quotation, all sales are made F.C.A. point of shipment and title passes to buyer, and sellers liability as to delivery ceases upon making delivery of products purchased hereunder to carrier at shipping point in good condition. All stipulated delivery or shipment dates are estimates only. Seller reserves the right to make deliveries of product types in installments and any delay in delivery or other default of any installment of any one or more products shall not relieve buyer of its obligation to accept and pay for the remaining deliveries.',
+                    style: 'small'
+                },
+                {
+                    text: '6. FREIGHT CHARGES.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Freight charges will be paid by the buyer. Freight charges may be estimated at the time of quotation. If actual freight charges are different, the actual freight charges will be invoiced to the buyer.',
+                    style: 'small'
+                },
+                {
+                    text: '7. INSPECTION.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Buyer shall inspect or reject goods within thirty (30) days from receipt thereof. If buyer fails to notify seller in writing of its rejection and the reasons therefore within the 30 days, buyer will be deemed to have accepted such shipment and waived any right to later reject the goods.',
+                    style: 'small'
+                },
+                {
+                    text: 'If tests are required to be witnessed by buyer or his representatives, notice of this requirement must be given at the time of placing the order and notice of readiness will then be given seven (7) days in advance of such tests being carried out. In the event of any delay on buyer ’s or his representative’s part in attending such test or in carrying out any inspection, after seven (7) days’ notice of readiness, the tests will proceed in buyer’s absence and shall be deemed to have been made by buyer. The buyer shall be required to promptly notify the seller, after witnessing a test or receiving test results of a witnessed or un-witnessed test, in writing, of any claimed defects in which it is claimed that the goods do not conform with the contract. Before buyer is entitled to reject any goods, the seller is to be given a reasonable time and opportunity to rectify the agreed defect.',
+                    style: 'small'
+                },
+                {
+                    text: '8. WARRANTY.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Seller warrants that the products furnished hereunder are, at the time of shipment, free from defects in material and workmanship only, for a period of one (1) year from the date of shipment unless otherwise stated in the quotation. No warranty is made against damage caused by accident, abuse, operating beyond design limits or faulty installation. Seller’s sole obligation hereunder shall be limited to, at seller’s option, either crediting buyer the purchase price or replacing or repairing, any products for which:',
+                    style: 'small'
+                },
+                {
+                    text: 'a. A written notice of non-conformance must be received within a reasonable time after the buyer knows or should have known of the defect, but in no event more than thirty (30) days after the expiration of the warranty period.',
+                    style: 'small'
+                },
+                {
+                    text: 'b. Any repair or replacement will not extend the warranty period. The warranty shall not apply to products which the seller determines have, by buyer or another, been subjected to operating and /or environmental conditions in excess of the maximum values thereof and the applicable specifications or otherwise have been subjected to misuse, neglected, improper installment, repair alteration or damage.',
+                    style: 'small'
+                },
+                {
+                    text: 'THIS LIMITED WARRANTY IS EXPRESSED IN LIEU OF ALL OTHER WARRANTIES, EXPRESSED, IMPLIED OR STATUTORY, INCLUDING ANY IMPLIED OR STATUTORY, INCLUDING ANY IMPLIED WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE OR MERCHANTABILITY, AND OF ALL OTHER OBLIGATIONS OR LIABILITIES ON THE SELLER’S PART.',
+                    style: 'small'
+                },
+                {
+                    text: 'SELLER NEITHER ASSUMESS NOR AUTHORIZES ANY OTHER PERSON TO ASSUME FOR SELLER ANY OTHER LIABILITIES IN CONNECTION WITH THE SALES OF SAID PRODUCTS. IN NO EVENT SHALL SELLER BE LIABLE FOR DAMAGES OF ANY KIND FROM ANY CAUSE TO THE PERSON OR PROPERTY OF OTHERS, OR FOR LOSS OF REVENUE OR PROFIT OF FOR ANY SPECIAL INCIDENTAL OR CONSEQUENTIAL DAMAGES. THE REMEDIES PROVIDED HEREIN ARE BUYER’S EXCLUSIVE REMEDIES IN THE EVENT OF ANY BREACH OF THE FOREGOING WARRANTIES. ANY ACTION OR BREACH OF WARRANTY OR OTHER ACTION UNDER THIS AGREEMENT MUST BE COMMENCED WITHIN ONE (1) YEAR AFTER CAUSE OF ACTION ARISES.',
+                    style: 'small'
+                },
+                {
+                    text: '9. LIMITATION OF LIABILITY.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Buyers exclusive remedy and seller’s total liability for any and all losses and damages arising out of any cause whatsoever arising out or related to this contract (whether such cause be based in contract, negligence, strict liability, tort, infringement or otherwise) shall in no event exceed the purchase price of the goods in respect to which such cause arises, in no event shall seller be liable for incidental, consequential or punitive damages resulting from any such cause. Seller may, at its sole option, either repair or replace defective goods or refund the purchase price paid upon return of the goods to seller, and shall thereafter have no further obligation to buyer.',
+                    style: 'small'
+                },
+                {
+                    text: '10. FORCE MAJEURE/EXCUSE OF PERFORMANCE.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Seller shall not be liable for non-performance or delays caused by acts of God, wars, riots, strikes, fires shortages of labor or unavailability of materials or components, labor disputes, delays in transportation, governmental restrictions or any causes beyond its reasonable control, in the event of any such excused delay or failure of performance, the date of delivery shall, at the request of the seller, be deferred for a period of time equal to time lost by reason of the delay.',
+                    style: 'small'
+                },
+                {
+                    text: '11. PATENTS.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Buyer shall hold seller harmless against any expenses or loss resulting from infringement of patents or trademarks arising from compliance with buyer ’s designs, specifications or instructions. Except as provided in the preceding sentence, seller shall settle or defend any suit or proceeding brought against buyer so far as based on a claim that any product (or part thereof) manufactured by seller furnished under this contract and not used in combination of other products whether or not furnished hereunder constitutes an infringement of any patent of the United States if notified promptly in writing and given authority, information and assistance (at seller’s expense) for the settlement or defense of same, and seller shall pay the damages and costs awarded therein against buyer or agreed upon in such settlement.',
+                    style: 'small'
+                },
+                {
+                    text: 'Seller shall (at its own expense) either (i) procure for buyer the right to continue using said product or part, or (ii) furnish a non-infringing product, or (iii) modify it so it becomes non-infringing, or (iv) refund the purchase price and transportation cost thereof upon return authorized by seller. The foregoing states the entire liability of seller for patent or trademark infringements by said products of any part thereof.',
+                    style: 'small'
+                },
+                {
+                    text: '12. DESIGN.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'Seller reserves the right to discontinue the manufacture of or change or modify the design and construction of any of seller’s products without incurring any obligation.',
+                    style: 'small'
+                },
+                {
+                    text: '13. RETURN OF GOODS.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'No product or part shall be returned to seller without written authorization and shipping instructions first having been obtained from seller (RMA). Products returned for credit after invoice date or items returned in damaged condition will be subject to restocking charges.',
+                    style: 'small'
+                },
+                {
+                    text: '14. MODIFICATIONS.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'These terms and conditions constitute the entire agreement between the parties relating to the sale of the products or services described in sellers quotations, and no addition or modification of any provision hereon, by way of changes to the drawings, designs, specifications or delivery schedule shall be binding upon seller unless made in writing and signed by a duly authorized employee of seller . No waiver or modification of any of the foregoing terms and conditions shall be valid unless it is made in writing and signed by both parties.',
+                    style: 'small'
+                },
+                {
+                    text: '15. GOVERNING LAW.\n',
+                    style: 'subheader'
+                },
+                {
+                    text: 'The parties acknowledge that the transaction that is the subject matter of this Agreement is related to the state of Texas an agree that the performance and construction of the Agreement shall be governed by the laws of the State of Texas and the United States of America, to the extent applicable. The parties specifically intend that the law of Texas cited as Uniform Commercial Code -Sales will control all aspects of the Agreement, except when this Agreement expressly provides otherwise.',
+                    style: 'small'
+                },
             ],
             styles: {
                 header: {
