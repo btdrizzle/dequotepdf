@@ -38,13 +38,13 @@ export const Cart = (props) => {
         <Table responsive bordered hover>
           <thead className="table-header">
             <tr></tr>
-            <th>Part Number</th>
-            <th>Part Type</th>
-            <th>Description</th>
-            <th>$Unit Cost</th>
-            <th>Quantity to Quote</th>
-            <th>$Subtotal</th>
-            <th>Remove from Cart</th>
+            <td>Part Number</td>
+            <td>Part Type</td>
+            <td>Description</td>
+            <td>$Unit Cost</td>
+            <td>Quantity to Quote</td>
+            <td>$Subtotal</td>
+            <td>Remove from Cart</td>
             <tr></tr>
           </thead>
           <tbody>
