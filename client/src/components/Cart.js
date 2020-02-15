@@ -10,7 +10,7 @@ export const Cart = (props) => {
   const [cart, setCart] = useContext(CartContext);
   const pdfValues = cart.map(item => ({
     partNumber: item.partNumber, partType: item.partType, description: item.description,
-    partPrice: item.partPrice, quantity: item.quantity, subTotal: item.subTotal
+    partPrice: "$" + item.partPrice.toString(), quantity: item.quantity, subTotal: "$" + item.subTotal.toString()
   }));
   function Sum(array) {
     let total = 0;
