@@ -1,24 +1,18 @@
 {
   "development": {
     "username": "root",
-    "password": "56r51231",
+    "password": "Geauxtigers1",
     "database": "dequotepdf",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "dialectOptions": {
-      "ssl": "true"
-    },
     "operatorsAliases": false
   },
   "test": {
     "username": "root",
-    "password": "56r51231",
+    "password": "Geauxtigers1",
     "database": "dequotepdf",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "dialectOptions": {
-      "ssl": "true"
-    },
     "operatorsAliases": false
   },
   "production": {
