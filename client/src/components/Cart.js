@@ -62,11 +62,11 @@ export const Cart = (props) => {
           total={Sum(cart)}
         />
 
-        <button className="btn exports" onClick={props.onHide}>Close</button>
       </Modal.Footer>
 
     </Modal>
   )
 }
 
+// <button className="btn exports" onClick={props.onHide}>Close</button>
 // Remove line 65 if you want to remove the close button
