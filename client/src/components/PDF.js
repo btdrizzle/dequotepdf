@@ -80,7 +80,7 @@ function PDF(props) {
                         body: [
                             [...props.pdfHeaders],
                             ...objectsToArrays(props.pdfValues),
-                            [{colSpan: 6, text: `Total Cost: ${props.total}`, alignment: 'right'}]
+                            [{ colSpan: 6, text: `Total Cost: $${props.total}`, alignment: 'right' }]
                         ]
                     }
                 },

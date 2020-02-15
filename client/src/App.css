@@ -51,3 +51,8 @@
   color: #ffffff;
   padding-top: 30px;
 }
+
+.table {
+  width: 75% !important;
+  margin-left: 12.5%!important;
+}
