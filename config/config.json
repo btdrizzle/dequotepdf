@@ -1,8 +1,7 @@
-
 {
   "development": {
     "username": "root",
-    "password": "Geauxtigers1",
+    "password": "56r51231",
     "database": "dequotepdf",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -13,7 +12,7 @@
   },
   "test": {
     "username": "root",
-    "password": "Geauxtigers1",
+    "password": "56r51231",
     "database": "dequotepdf",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -23,6 +22,11 @@
     "operatorsAliases": false
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL"
+    "username": "root",
+    "password": "56r51231",
+    "database": "dequotepdf",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
   }
 }
