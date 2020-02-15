@@ -26,11 +26,12 @@ export default function App() {
 
   return (
     <CartProvider>
-      <div>
+      <div className="container">
         <img className="logo" src="../faure-herman-logo.jpg" alt="Faure Herman logo"></img>
         <h1 className="text-center">Spare Parts Quotation</h1>
         <button className="btn exports mx-auto" onClick={() => setModalShow(true)}>Show Cart</button>
         <br />
+
         <Cart show={modalShow} onHide={() => setModalShow(false)} />
         <Table responsive bordered hover>
           <thead className="table-header">
