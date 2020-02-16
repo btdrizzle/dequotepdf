@@ -644,7 +644,7 @@ function PDF(props) {
     }
     return (
         <div>
-            <button type="button" className="btn exports" onClick={makeThatPDF}>Quote PDF</button>
+            <button type="button" className="btn exports" onClick={makeThatPDF}>Get Quote</button>
         </div>
     )
 

@@ -31,7 +31,7 @@ export const Cart = (props) => {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Cart for Quote
+          Request for Quote
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -41,10 +41,10 @@ export const Cart = (props) => {
             <td>Part Number</td>
             <td>Part Type</td>
             <td>Description</td>
-            <td>$Unit Cost</td>
+            <td>Unit Cost</td>
             <td>Quantity to Quote</td>
-            <td>$Subtotal</td>
-            <td>Remove from Cart</td>
+            <td>Subtotal</td>
+            <td>Remove from Quote</td>
             <tr></tr>
           </thead>
           <tbody>

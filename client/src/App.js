@@ -13,7 +13,7 @@ export default function App() {
   const [fromDatabase, setfromDatabase] = useState([])
   const [modalShow, setModalShow] = useState(false);
 
-  
+
 
   function getAPI() {
     API.getParts()
@@ -30,8 +30,7 @@ export default function App() {
     <CartProvider>
       <div className="container">
         <img className="logo" src="../faure-herman-logo.jpg" alt="Faure Herman logo"></img>
-        <h1 className="text-center">Spare Parts Quotation</h1>
-        <button className="btn exports mx-auto" onClick={() => setModalShow(true)}>Show Cart</button>
+        <h1 className="text-center uppercase">Spare Parts Quotation</h1>
         <br />
 
         <Cart show={modalShow} onHide={() => setModalShow(false)} />
@@ -44,8 +43,8 @@ export default function App() {
             <th>Description</th>
             <th>Unit Cost</th>
             <th>In Stock</th>
-            <th>Quantity to Quote</th>
-            <th>Add to Cart</th>
+            <th>Quantity<br /> to Quote</th>
+            <th>Request Quote</th>
             <tr></tr>
           </thead>
           <tbody>
@@ -54,6 +53,8 @@ export default function App() {
             ))}
           </tbody>
         </Table>
+        <button className="btn exports-large mx-auto" onClick={() => setModalShow(true)}>Show Quote Request Summary</button>
+
 
       </div>
     </CartProvider>
