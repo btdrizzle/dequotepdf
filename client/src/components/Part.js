@@ -17,6 +17,7 @@ function Part(props) {
         }
 
     }
+    const isInCart = cart.some(item => item.id === props.data.id);
     return (
         <tr>
             <td><img src={props.data.partPath} alt="part path" width="200" height="auto"></img></td>
@@ -40,10 +41,18 @@ function Part(props) {
                     <option className="option" value="10">10</option>
                 </select>
             </td>
-            <td><button className="btn exports-yellow" onClick={addToCart}>Add to Quote</button></td>
+            <td>
+                {isInCart ? (
+                    <button className="btn exports-yellow" disabled>Item in Quote</button>
+                ):(
+                    <button className="btn exports" onClick={addToCart}>Add to Quote</button>
+                )
+                }
+            </td>
         </tr>
     )
 
 }
 
 export default Part;
+
