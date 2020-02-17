@@ -40,7 +40,7 @@ function Part(props) {
                     <option className="option" value="10">10</option>
                 </select>
             </td>
-            <td><button className="btn exports" onClick={addToCart}>Add to Quote</button></td>
+            <td><button className="btn exports-yellow" onClick={addToCart}>Add to Quote</button></td>
         </tr>
     )
 

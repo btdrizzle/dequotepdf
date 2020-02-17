@@ -183,6 +183,16 @@ table {
   display: block!important;
 }
 
+.exports-yellow {
+  margin: auto !important;
+  background-color: #FFE400 !important;
+  color: #000000 !important;
+  width: 120px !important;
+  text-transform: uppercase;
+  margin: 0 auto !important;
+  display: block!important;
+}
+
 .exports-large {
   margin: auto !important;
   background-color: #22303a !important;
