@@ -29,8 +29,10 @@ export default function App() {
   return (
     <CartProvider>
       <div className="container">
-        <img className="logo" src="../faure-herman-logo.jpg" alt="Faure Herman logo"></img>
-        <h1 className="text-center uppercase">Spare Parts Quotation</h1>
+        <a href="http://sandbox.imageering.com/FH/">
+          <img className="logo" src="../faure-herman-logo.jpg" alt="Faure Herman logo"></img>
+        </a>
+        <h1 className="text-center uppercase title">Spare Parts Quotation</h1>
         <br />
 
         <Cart show={modalShow} onHide={() => setModalShow(false)} />

@@ -44,6 +44,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .table-header {
@@ -205,4 +206,8 @@ table {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: -1%;
 }
