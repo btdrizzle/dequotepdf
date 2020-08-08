@@ -16,6 +16,11 @@
     "operatorsAliases": false
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL"
+    "username": "root",
+    "password": "Geauxtigers1",
+    "database": "dequotepdf",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
   }
 }

@@ -7,7 +7,7 @@ export default function CartPart(props) {
     const [cart, setCart] = useContext(CartContext);
 
     const removeFromCart = () => {
-        setCart(cart.filter(item => item.id != props.data.id))
+        setCart(cart.filter(item => item.id !== props.data.id))
     }
 
     return (

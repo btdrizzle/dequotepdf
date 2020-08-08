@@ -10,21 +10,21 @@ const PORT = process.env.PORT || 3001;
 const routes = require("./routes/routes");
 
 app.use(express.urlencoded({
-	extended: true
+	extended: false
 }));
 app.use(express.json());
 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-}
-app.use(logger("dev"));
+/* if (process.env.NODE_ENV === "production") {
+    app.use(express.static("./client/build"));
+} */
+app.use(logger("prod"));
 // Use apiRoutes
 app.use("/api", routes);
 
 const router = express.Router();
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile("client/build/index.html", {root: __dirname});
 });
 
 db.sequelize.sync({}).then(function () {
